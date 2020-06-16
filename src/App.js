@@ -1,24 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Nav from "./Nav/Nav";
+import Practice from "./Practice/Practice";
+import Quiz from "./Quiz/Quiz";
+import { Contxt } from "./Context";
 
-function App() {
+import { BrowserRouter, Route } from "react-router-dom";
+
+function App(props) {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Contxt>
+        <BrowserRouter basename="/">
+          <Route exact path="/" component={Nav} />
+          <Route path="/Practice" component={Practice} />
+          <Route path="/Quiz" component={Quiz} />
+        </BrowserRouter>
+      </Contxt>
     </div>
   );
 }

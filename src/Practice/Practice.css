@@ -1,0 +1,273 @@
+.circle {
+  height: 100px;
+  width: 100px;
+
+  margin-left: 40vw;
+  margin-top: 15vh;
+  border-radius: 50%;
+  background: linear-gradient(360deg, rgb(79, 219, 79), white);
+  position: absolute;
+  border: 15px solid rgb(153, 185, 223);
+  box-shadow: 0px 0px 5px 13px rgb(99, 176, 240);
+}
+.btnPrac {
+  width: 30vw;
+  margin-left: 35vw;
+  padding: 5px;
+}
+.btnsec {
+  margin-top: 50vh;
+}
+#Practice {
+  height: 100vh;
+  width: 100vw;
+}
+.head {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.started {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  animation-name: fading;
+  animation-duration: 2.4s;
+  animation-fill-mode: forwards;
+}
+@keyframes fading {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.footer {
+  background-color: rgb(29, 26, 26);
+  color: white;
+  height: 2vh;
+}
+#abs {
+  font-weight: bold;
+  font-size: 16px;
+}
+.dark #abs {
+  color: white;
+}
+.playing {
+  height: 100px;
+  border: 15px solid rgb(153, 185, 223);
+  width: 100px;
+  margin-left: 40vw;
+  margin-top: 15vh;
+  border-radius: 50%;
+  position: absolute;
+  animation-name: breathing;
+  animation-duration: 17s;
+  animation-iteration-count: infinite;
+  animation-delay: 2.5s;
+  box-shadow: 0px 0px 5px 13px rgb(99, 176, 240);
+  background: linear-gradient(360deg, rgb(79, 219, 79), white);
+}
+@keyframes breathing {
+  0% {
+    transform: scale(1);
+    background: linear-gradient(360deg, rgb(79, 219, 79), white);
+  }
+
+  35% {
+    transform: scale(2);
+    background: linear-gradient(360deg, rgb(79, 163, 219), white);
+  }
+
+  60% {
+    transform: scale(2);
+    background: linear-gradient(360deg, rgb(79, 163, 219), white);
+  }
+  100% {
+    transform: scale(1);
+    background: linear-gradient(360deg, rgb(79, 219, 79), white);
+  }
+}
+
+.relaxing {
+  height: 100px;
+  width: 100px;
+  margin-left: 40vw;
+  margin-top: 15vh;
+  border-radius: 50%;
+  border: 15px solid rgb(153, 185, 223);
+  position: absolute;
+  animation-name: relax;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-delay: 2.5s;
+  background: linear-gradient(360deg, rgb(79, 219, 79), white);
+}
+@keyframes relax {
+  0% {
+    transform: scale(1);
+    background: linear-gradient(360deg, rgb(79, 219, 79), white);
+  }
+
+  40% {
+    transform: scale(2);
+    background: linear-gradient(360deg, rgb(79, 219, 79), white);
+  }
+
+  90% {
+    transform: scale(1);
+    background: linear-gradient(360deg, rgb(79, 219, 79), white);
+  }
+  100% {
+    transform: scale(1);
+    background: linear-gradient(360deg, rgb(79, 219, 79), white);
+  }
+}
+.centre {
+  margin-left: 35vw;
+}
+
+.fadeornot {
+  opacity: 0;
+}
+
+.faded {
+  opacity: 0;
+}
+.inhale {
+  opacity: 0;
+  animation-name: inh;
+  animation-duration: 17s;
+  animation-iteration-count: infinite;
+  animation-delay: 2.5s;
+}
+@keyframes inh {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.hold {
+  opacity: 0;
+  animation-name: hold;
+  animation-duration: 17s;
+  animation-iteration-count: infinite;
+  animation-delay: 2.5s;
+}
+@keyframes hold {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  34% {
+    opacity: 1;
+  }
+  59% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.exhale {
+  opacity: 0;
+  animation-name: exh;
+  animation-duration: 17s;
+  animation-iteration-count: infinite;
+  animation-delay: 2.5s;
+}
+@keyframes exh {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  61% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.inhaleRelax {
+  opacity: 0;
+  animation-name: inhRel;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-delay: 2.5s;
+}
+@keyframes inhRel {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 1;
+  }
+  41% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.exhaleRelax {
+  opacity: 0;
+  animation-name: exhRel;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-delay: 2.5s;
+}
+@keyframes exhRel {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  42% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  81% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 750px) {
+  .circle,
+  .playing,
+  .relaxing {
+    margin-left: 45vw;
+  }
+  .centre {
+    margin-left: 43vw;
+  }
+}
+@media (max-width: 400px) {
+  .circle,
+  .playing,
+  .relaxing {
+    margin-left: 35vw;
+  }
+  .centre {
+    margin-left: 30vw;
+  }
+}

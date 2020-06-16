@@ -1,0 +1,23 @@
+[
+  {
+    "id": "0",
+    "question": "How often do you find yourself smiling?",
+    "options": ["Rarely", "Quiet often", "always"],
+    "correct": "always",
+    "partial": "Quiet Often"
+  },
+  {
+    "id": "2",
+    "question": "How often you get mood swings?",
+    "options": ["Rarely", "Quiet often", "Always"],
+    "correct": "always",
+    "partial": "Quiet Often"
+  },
+  {
+    "id": "3",
+    "question": "Do you have any active hobbies?",
+    "options": ["Nope, none", "A few", "Loads of them"],
+    "correct": "Loads of them",
+    "partial": "A few"
+  }
+]

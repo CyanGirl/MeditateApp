@@ -1,0 +1,91 @@
+.first {
+  max-width: 100vw;
+  height: 98vh;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  display: inline-block;
+  background-color: black;
+}
+html,
+body {
+  min-height: 100%;
+}
+#overlay {
+  position: absolute;
+  z-index: 11;
+  height: 98vh;
+  width: 100vw;
+  margin: auto;
+}
+#overlay:hover {
+  opacity: 1;
+  box-shadow: inset 0 0 0 10000px rgba(0, 0, 0, 0.2);
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.content {
+  width: 70vw;
+  margin-top: 20vh;
+  margin-left: 10vw;
+  color: black;
+}
+#back {
+  position: absolute;
+  margin: auto;
+  opacity: 1;
+  margin: auto;
+}
+
+img {
+  width: 100vw;
+  height: 98vh;
+  margin: auto;
+}
+.explore {
+  color: black;
+  margin-left: 25vw;
+  text-shadow: 2px 2px 5px rgb(84, 141, 216);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  width: 70vw;
+  margin-top: 25vh;
+  margin-left: 5vw;
+}
+.buttonStart {
+  background: linear-gradient(180deg, rgb(40, 114, 156), white);
+  border-radius: 25%;
+  padding: 5px;
+  border: 0px dotted black;
+}
+.buttonStart:hover {
+  background: linear-gradient(180deg, white, rgb(40, 114, 156));
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#exButton {
+  box-shadow: 2px 2px 3px 2px rgb(40, 114, 156);
+  width: 10rem;
+}
+p {
+  padding: 5px;
+}
+h2,
+h4 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-shadow: 2px 2px 5px rgb(89, 166, 211);
+}
+h4 {
+  margin-left: 25vh;
+}
+.dark img {
+  opacity: 0.3;
+}
+.dark h2,
+h4 {
+  color: rgb(245, 206, 206);
+}
+.dark h3 {
+  color: rgb(245, 206, 206);
+}

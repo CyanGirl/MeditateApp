@@ -1,0 +1,48 @@
+h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.quesbox {
+  border: 0.5px solid rgb(100, 93, 93);
+  box-shadow: 2px 2px 9px rgb(107, 231, 107);
+  width: 80vw;
+  margin: auto;
+  padding: 10px;
+  border-radius: 3px;
+}
+.ansbutton {
+  width: 40vw;
+}
+.box {
+  margin-top: 30vh;
+  box-shadow: 2px 2px 3px 5px rgb(125, 182, 190);
+  padding: 10px;
+}
+
+.result {
+  font-size: 20px;
+  animation-name: blink;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+  padding: 30px;
+}
+@keyframes blink {
+  0% {
+    text-shadow: 2px 2px 5px rgb(32, 72, 182);
+  }
+
+  50% {
+    text-shadow: 2px 2px 5px rgb(207, 148, 19);
+  }
+  100% {
+    text-shadow: 2px 2px 5px rgb(207, 19, 151);
+  }
+}
+
+#quiz {
+  min-height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+.dark h5 {
+  color: white;
+}
