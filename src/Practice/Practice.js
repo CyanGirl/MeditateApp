@@ -13,27 +13,22 @@ const Practice = () => {
 
   return (
     <div id="Practice" className={mode}>
-      <br />
       <Link to={"/"}>
         <h6 className="Prev">
-          <span class="glyphicon glyphicon-circle-arrow-left" />
-          &nbsp;Go to Home
+          <i className="fa fa-home fa-2x" aria-hidden="true"></i>
         </h6>
       </Link>
+      <br />
       <h3 className="prachead centre" className={line}>
         Start Relaxing?
       </h3>
-
       <div id="abs" className="text-center">
         <span className={inhale}>Breathe In &nbsp; </span>
         <span className={hold}> &nbsp; &nbsp; Hold On &nbsp; </span>
         <span className={exhale}> &nbsp; &nbsp; Breathe Out &nbsp;</span>
       </div>
-
       <div className="circle" className={anim}></div>
-
       <br />
-
       <div className="btnsec">
         <button
           className="btnPrac buttonStart"

@@ -18,23 +18,36 @@ body {
   width: 100vw;
 }
 #brief {
-  margin-top: 8vh;
-  width: 100vw;
+  max-width: 100vw;
   font-family: Georgia, "Times New Roman", Times, serif;
+  animation-name: popin;
+  animation-duration: 2.5s;
+  animation-delay: 0.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+@keyframes popin {
+  from {
+    opacity: 0;
+    margin-left: -100vw;
+  }
+  to {
+    opacity: 1;
+    margin-left: 0vw;
+  }
 }
 p {
   padding: 3px;
 }
 .Prev {
   background-color: rgb(130, 176, 204) !important;
-  width: 20vw !important;
+  width: 100vw !important;
   border-radius: 3px !important;
-  text-align: center !important;
+  margin-top: 0vh;
   color: black !important;
-  margin-left: 2vw !important;
 }
-.Prev:hover {
-  background-color: rgb(83, 200, 204) !important;
+.fa:hover {
+  color: rgb(90, 22, 145);
 }
 h6 {
   padding: 5px;

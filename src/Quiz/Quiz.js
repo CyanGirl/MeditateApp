@@ -22,14 +22,13 @@ const Quiz = () => {
 
   return (
     <div className={mode}>
-      <br />
       <div id="quiz" className="boxmain">
         <Link to={"/"}>
           <h6 className="Prev">
-            <span class="glyphicon glyphicon-circle-arrow-left" />
-            &nbsp;Go to Home
+            <i className="fa fa-home fa-2x" aria-hidden="true"></i>
           </h6>
         </Link>
+        <br />
         <h3 className="text-center">How are you doin'?</h3>
         <br />
         {response < 3 &&
@@ -45,7 +44,6 @@ const Quiz = () => {
           })}
         {response === 3 ? <Result score={score} /> : ""}
       </div>
-      <br />
     </div>
   );
 };

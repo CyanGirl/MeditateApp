@@ -11,23 +11,16 @@ nav {
 }
 .header {
   font-family: Georgia, "Times New Roman", Times, serif;
-  color: wheat;
+  color: rgb(160, 210, 223);
+  text-shadow: none !important;
 }
 .navbar {
   width: 100%;
 }
-.btnbreathe {
-  width: 50vw;
-  background: linear-gradient(180deg, rgb(40, 114, 156), white);
-  color: black;
-  text-align: center;
-  border-radius: 5px;
-  padding: 15px;
-  margin: auto;
+button:active {
+  border: 0px solid black;
 }
-.btnbreathe:hover {
-  background: linear-gradient(180deg, white, rgb(44, 116, 158));
-}
+
 #P,
 #Q {
   margin: auto;
@@ -36,23 +29,24 @@ nav {
   width: 80vw;
   border-radius: 10%;
 }
-.foot {
-  margin-top: 10vh;
-  background-color: rgb(21, 29, 29);
-  color: white;
-}
+
 .mode {
   background-color: transparent !important;
-  color: rgb(150, 145, 145);
+  color: rgb(150, 145, 145) !important;
   border: 0px solid black;
   padding: 2px;
   margin-left: 1.5vh;
-  margin-top: 2vh;
+  margin-top: 13px;
+}
+.foot {
+  background-color: rgb(46, 42, 42);
+  color: rgb(228, 199, 199);
 }
 .mode:hover {
-  color: white;
+  color: white !important;
 }
-.dark p {
+.dark p,
+h3 {
   color: rgb(224, 197, 197);
 }
 .dark {

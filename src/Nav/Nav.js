@@ -1,14 +1,16 @@
 import React, { useState, useContext } from "react";
 import "./Nav.css";
-import First from "../First/First";
-import Brief from "../Brief";
-import Quiz from "../Quiz/Quiz";
-import Practice from "../Practice/Practice";
-import { Route, Link } from "react-router-dom";
+import { Route, Link, useHistory } from "react-router-dom";
 import { modeContext } from "../Context";
+import "./first.css";
 
 const Nav = () => {
   const [mode, setMode] = useContext(modeContext);
+  let history = useHistory();
+  const replacing = (e) => {
+    e.preventDefault();
+    history.push("/Practice");
+  };
   return (
     <div className={mode} id="main">
       <nav className="navbar navbar-inverse navbar-fixed-top">
@@ -23,9 +25,9 @@ const Nav = () => {
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>
           </button>
-          <h3 className="header">
+          <h2 className="header">
             <strong>Calm & Relax</strong>
-          </h3>
+          </h2>
         </div>
         <div className="collapse navbar-collapse" id="myNav">
           <ul className="nav navbar-nav navbar-right">
@@ -37,59 +39,57 @@ const Nav = () => {
                 className="mode"
                 onClick={() => setMode(mode === "dark" ? "" : "dark")}
               >
-                &nbsp;{mode === "" ? " Dark Mode" : " Light Mode"} &nbsp;
+                &nbsp;{mode === "" ? "  Dark Mode " : " Light Mode  "} &nbsp;
               </button>
             </li>
             <li>
-              <a href="#B">&nbsp;About&nbsp;</a>
+              <Link to="/Brief">&nbsp;About&nbsp;</Link>
             </li>
             <li>
-              <a href="#Q">&nbsp;Look Through&nbsp;</a>
+              <Link to={{ pathname: "/Quiz", state: { mode } }}>
+                &nbsp;Look Through&nbsp;
+              </Link>
             </li>
             <li>
-              <a href="#P">&nbsp;Breathe&nbsp; &nbsp;</a>
+              <Link to={{ pathname: "/Practice", state: { mode } }}>
+                &nbsp;Breathe&nbsp; &nbsp;
+              </Link>
             </li>
           </ul>
         </div>
       </nav>
       <div id="F">
         <br />
-        <First />
+        <div className="first">
+          <div id="overlay">
+            <h3 className="firstline">RESTLESS? TRY THIS</h3>
+            <br />
+            <div className="secondline">
+              <button className="buttons button1" onClick={replacing}>
+                <b>Breathe</b>
+              </button>
+
+              <button
+                className="buttons button2"
+                data-toggle="collapse"
+                data-target="#myNav"
+              >
+                <b>Explore</b>
+              </button>
+            </div>
+          </div>
+          <div id="back">
+            <div className="img">
+              <img src={require("../Images/pics.jpeg")}></img>
+            </div>
+          </div>
+        </div>
       </div>
-      <div id="B">
-        <br />
-        <Brief />
+      <div className="foot">
+        <p className="text-center">
+          Reach Me<a href="https://cyancodes.blogspot.com"> here</a>
+        </p>
       </div>
-      <hr />
-      <br />
-      <br />
-      <div id="Q">
-        <br />
-        <h3 className="text-center"> ....Look through your inner self....</h3>
-        <br />
-        <br />
-        <Link to={{ pathname: "/Quiz", state: { mode } }}>
-          <h6 className="btnbreathe text-center" style={{ color: "black" }}>
-            Get started!
-          </h6>
-        </Link>
-      </div>
-      <br />
-      <br />
-      <br />
-      <div id="P">
-        <h3 className="text-center"> ....Take a deep breathe....</h3>
-        <br />
-        <br />
-        <Link to={{ pathname: "/Practice", state: { mode } }}>
-          <h6 className="btnbreathe text-center" style={{ color: "black" }}>
-            Breathe
-          </h6>
-        </Link>
-      </div>
-      <p className="text-center foot">
-        Reach me <a href="https://cyancodes.blogspot.com">here</a>
-      </p>
     </div>
   );
 };

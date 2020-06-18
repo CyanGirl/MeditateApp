@@ -1,0 +1,150 @@
+.first {
+  max-width: 100vw;
+  height: 88vh;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  display: inline-block;
+  background-color: black;
+  margin-top: 5vh;
+}
+html,
+body {
+  min-height: 100%;
+}
+#overlay {
+  position: absolute;
+  z-index: 11;
+  min-height: 90vh;
+  width: 100vw;
+  margin: auto;
+}
+#overlay:hover {
+  opacity: 1;
+  box-shadow: inset 0 0 0 10000px rgba(0, 0, 0, 0.2);
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#back {
+  position: absolute;
+  margin: auto;
+  opacity: 1;
+  margin: auto;
+}
+
+.explore {
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  width: 70vw;
+}
+.buttons {
+  background-color: transparent;
+  padding: 10px;
+  border: 0.5px solid orange;
+  width: 20vw;
+  box-shadow: 0px 0px 10px 0px rgb(219, 106, 35);
+}
+.button1 {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  background-color: rgb(139, 223, 226);
+}
+.button1:hover {
+  background-color: rgb(97, 219, 97);
+}
+.button2 {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.button2:hover {
+  background-color: rgb(89, 166, 211);
+}
+
+.firstline {
+  animation-name: fromtop;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  margin-left: 8vw;
+  color: black !important;
+  text-shadow: 1px 2px 3px rgb(221, 202, 202);
+  opacity: 0;
+  padding: 3px;
+}
+@keyframes fromtop {
+  0% {
+    margin-top: 0vh;
+  }
+  100% {
+    margin-top: 33vh;
+    opacity: 1;
+  }
+}
+.secondline {
+  animation-name: fromleft;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;
+  opacity: 0;
+  margin-left: -100vw;
+}
+@keyframes fromleft {
+  0% {
+    margin-left: -50vw;
+  }
+  100% {
+    margin-left: 10vw;
+    opacity: 1;
+  }
+}
+@media (min-width: 750px) {
+  .buttons {
+    width: 15vw;
+  }
+  .firstline {
+    margin-left: 10vw;
+  }
+}
+@media (max-width: 415px) {
+  .buttons {
+    width: 20vw;
+  }
+  .firstline {
+    margin-left: 10vw;
+    width: 50vw;
+  }
+}
+img {
+  width: 100vw;
+  height: 90vh;
+  margin: auto;
+}
+
+p {
+  padding: 5px;
+}
+h2,
+h4 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-shadow: 2px 2px 5px rgb(89, 166, 211);
+}
+h4 {
+  margin-left: 25vh;
+}
+.dark img {
+  opacity: 0.6;
+}
+.dark button {
+  color: black;
+}
+@media (min-width: 770px) {
+  .button2 {
+    display: none;
+  }
+  .button1 {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+}

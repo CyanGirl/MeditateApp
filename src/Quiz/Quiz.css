@@ -2,8 +2,7 @@ h3 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 .quesbox {
-  border: 0.5px solid rgb(100, 93, 93);
-  box-shadow: 2px 2px 9px rgb(107, 231, 107);
+  box-shadow: 2px 2px 9px rgb(92, 228, 92);
   width: 80vw;
   margin: auto;
   padding: 10px;
