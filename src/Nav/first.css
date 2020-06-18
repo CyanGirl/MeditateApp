@@ -5,7 +5,7 @@
   background-size: 100vw;
   display: inline-block;
   background-color: black;
-  margin-top: 5vh;
+  margin-top: 3vh;
 }
 html,
 body {
@@ -146,5 +146,8 @@ h4 {
   .button1 {
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
+  }
+  .first {
+    margin-top: 5vh;
   }
 }
