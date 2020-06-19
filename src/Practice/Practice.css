@@ -1,7 +1,7 @@
 .circle {
   height: 100px;
   width: 100px;
-  margin-top: 10vh;
+  margin-top: 15vh;
   display: inline-block;
   text-align: left;
   border-radius: 50%;
@@ -70,7 +70,7 @@ h3 {
 .playing {
   height: 100px;
   border: 15px solid rgb(153, 185, 223);
-  margin-top: 10vh;
+  margin-top: 15vh;
   width: 100px;
   display: inline-block;
   text-align: left;
@@ -107,7 +107,7 @@ h3 {
   height: 100px;
   width: 100px;
   display: inline-block;
-  margin-top: 10vh;
+  margin-top: 15vh;
   text-align: left;
   border-radius: 50%;
   border: 15px solid rgb(153, 185, 223);
