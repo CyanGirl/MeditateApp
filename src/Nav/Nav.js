@@ -30,7 +30,7 @@ const Nav = () => {
           </h2>
         </div>
         <div className="collapse navbar-collapse " id="myNav">
-          <ul className="nav navbar-nav">
+          <ul className="nav navbar-nav navbar-right">
             <li className="active">
               <a href="#">&nbsp;Home&nbsp;</a>
             </li>
