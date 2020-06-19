@@ -2,9 +2,7 @@
   height: 3vh;
   padding: 3px;
 }
-nav {
-  border-radius: 3px;
-}
+
 #main {
   width: 100%;
   overflow-x: hidden;

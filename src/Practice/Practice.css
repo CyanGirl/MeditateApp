@@ -1,7 +1,7 @@
 .circle {
   height: 100px;
   width: 100px;
-  margin-top: 15vh;
+  margin-top: 10vh;
   display: inline-block;
   text-align: left;
   border-radius: 50%;
@@ -27,7 +27,7 @@
   transition: all 0.5s;
 }
 .btnsec {
-  margin-top: 30vh;
+  margin-top: 20vh;
 }
 #Practice {
   min-height: 100vh;
@@ -70,6 +70,7 @@ h3 {
 .playing {
   height: 100px;
   border: 15px solid rgb(153, 185, 223);
+  margin-top: 10vh;
   width: 100px;
   display: inline-block;
   text-align: left;
@@ -106,6 +107,7 @@ h3 {
   height: 100px;
   width: 100px;
   display: inline-block;
+  margin-top: 10vh;
   text-align: left;
   border-radius: 50%;
   border: 15px solid rgb(153, 185, 223);

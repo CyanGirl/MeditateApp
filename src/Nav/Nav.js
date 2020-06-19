@@ -29,8 +29,8 @@ const Nav = () => {
             <strong>Calm & Relax</strong>
           </h2>
         </div>
-        <div className="collapse navbar-collapse" id="myNav">
-          <ul className="nav navbar-nav navbar-right">
+        <div className="collapse navbar-collapse " id="myNav">
+          <ul className="nav navbar-nav">
             <li className="active">
               <a href="#">&nbsp;Home&nbsp;</a>
             </li>
