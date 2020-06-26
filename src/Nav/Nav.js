@@ -80,7 +80,7 @@ const Nav = () => {
           </div>
           <div id="back">
             <div className="img">
-              <img src={require("../Images/pics.jpeg")}></img>
+              <img src={require("../Images/pic.jpeg")}></img>
             </div>
           </div>
         </div>

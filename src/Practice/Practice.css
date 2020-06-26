@@ -5,7 +5,7 @@
   display: inline-block;
   text-align: left;
   border-radius: 50%;
-  background: linear-gradient(360deg, rgb(79, 219, 79), white);
+  background: linear-gradient(360deg, rgb(253, 144, 144), white);
   border: 15px solid rgb(153, 185, 223);
   box-shadow: 0px 0px 5px 13px rgb(99, 176, 240);
 }
@@ -80,26 +80,26 @@ h3 {
   animation-iteration-count: infinite;
   animation-delay: 2.5s;
   box-shadow: 0px 0px 5px 13px rgb(99, 176, 240);
-  background: linear-gradient(360deg, rgb(79, 219, 79), white);
+  background: linear-gradient(360deg, rgb(253, 144, 144), white);
 }
 @keyframes breathing {
   0% {
     transform: scale(1);
-    background: linear-gradient(360deg, rgb(79, 219, 79), white);
+    background: linear-gradient(360deg, rgb(253, 144, 144), white);
   }
 
   35% {
     transform: scale(2);
-    background: linear-gradient(360deg, rgb(79, 163, 219), white);
+    background: linear-gradient(360deg, rgb(253, 144, 144), white);
   }
 
   60% {
     transform: scale(2);
-    background: linear-gradient(360deg, rgb(79, 163, 219), white);
+    background: linear-gradient(360deg, rgb(253, 144, 144), white);
   }
   100% {
     transform: scale(1);
-    background: linear-gradient(360deg, rgb(79, 219, 79), white);
+    background: linear-gradient(360deg, rgb(253, 144, 144), white);
   }
 }
 
@@ -116,26 +116,26 @@ h3 {
   animation-iteration-count: infinite;
   animation-delay: 2.5s;
   box-shadow: 0px 0px 5px 13px rgb(99, 176, 240);
-  background: linear-gradient(360deg, rgb(79, 219, 79), white);
+  background: linear-gradient(360deg, rgb(253, 144, 144), white);
 }
 @keyframes relax {
   0% {
     transform: scale(1);
-    background: linear-gradient(360deg, rgb(79, 219, 79), white);
+    background: linear-gradient(360deg, rgb(253, 144, 144), white);
   }
 
   40% {
     transform: scale(2);
-    background: linear-gradient(360deg, rgb(79, 219, 79), white);
+    background: linear-gradient(360deg, rgb(253, 144, 144), white);
   }
 
   90% {
     transform: scale(1);
-    background: linear-gradient(360deg, rgb(79, 219, 79), white);
+    background: linear-gradient(360deg, rgb(253, 144, 144), white);
   }
   100% {
     transform: scale(1);
-    background: linear-gradient(360deg, rgb(79, 219, 79), white);
+    background: linear-gradient(360deg, rgb(253, 144, 144), white);
   }
 }
 .centre {
